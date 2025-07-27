@@ -1,9 +1,13 @@
 package survivor;
 
+import no.loopacademy.models.skills.Skill;
 import no.loopacademy.models.survivors.CareGiver;
 import no.loopacademy.models.survivors.Survivor;
 import no.loopacademy.models.attributes.SurvivorAttributes;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -17,7 +21,7 @@ public class SurvivorTests {
         CareGiver c = new CareGiver(expectedName);
         String actualName = c.getName();
         // Assert
-        assertEquals(expectedName,actualName);
+        assertEquals(expectedName, actualName);
     }
 
     @Test
@@ -37,6 +41,22 @@ public class SurvivorTests {
         SurvivorAttributes actualAttributes = john.getAttributes();
 
         // Assert
-        assertEquals(expectedAttributes,actualAttributes);
+        assertEquals(expectedAttributes, actualAttributes);
     }
+
+    @Test
+    void caregiverShouldBeCreatedWithCorrectSkills() {
+
+
+        CareGiver john = new CareGiver("John");
+        List<Skill> expectedSkills = List.of(Skill.FieldMedicine, Skill.PsychologicalSupport);
+        List<Skill> actualSkills = john.getSkills();
+
+        // Assert
+        assertEquals(expectedSkills, actualSkills);
+
+
+    }
+
+
 }

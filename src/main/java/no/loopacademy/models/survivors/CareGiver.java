@@ -1,6 +1,9 @@
 package no.loopacademy.models.survivors;
 
 import no.loopacademy.models.attributes.SurvivorAttributes;
+import no.loopacademy.models.skills.Skill;
+
+import java.util.List;
 
 public class CareGiver extends Survivor {
 
@@ -16,6 +19,7 @@ public class CareGiver extends Survivor {
         attributes.setIntelligence(8);
         attributes.setLeadership(5);
         attributes.setTrustworthiness(8);
+        this.setSkills(List.of(Skill.FieldMedicine, Skill.PsychologicalSupport));
     }
 
 
