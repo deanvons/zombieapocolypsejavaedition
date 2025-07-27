@@ -7,8 +7,6 @@ import java.util.List;
 
 public class CareGiver extends Survivor {
 
-    SurvivorAttributes attributes;
-
     public CareGiver(String name) {
         super(name);
         this.attributes = new SurvivorAttributes();
