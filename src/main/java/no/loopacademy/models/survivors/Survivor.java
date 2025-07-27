@@ -1,4 +1,4 @@
-package no.loopacademy.models;
+package no.loopacademy.models.survivors;
 
 public class Survivor {
 
