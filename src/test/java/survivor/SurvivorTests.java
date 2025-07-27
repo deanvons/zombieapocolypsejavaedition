@@ -10,19 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SurvivorTests {
 
     @Test
-    void survivorShouldBeCreatedWithCorrectName() {
-
-        // Arrange
-        String expectedName = "Mervin";
-
-        // Act
-        Survivor testSurvivor = new Survivor(expectedName);
-
-        // Assert
-        assertEquals(expectedName,testSurvivor.getName());
-    }
-
-    @Test
     void caregiverShouldBeCreatedWithCorrectName() {
         // Arrange
         String expectedName = "Melvin";

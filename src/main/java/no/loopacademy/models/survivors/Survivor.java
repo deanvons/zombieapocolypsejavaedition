@@ -1,8 +1,14 @@
 package no.loopacademy.models.survivors;
 
-public class Survivor {
+import no.loopacademy.models.actions.Action;
+
+import java.util.List;
+
+public abstract class Survivor {
 
     private String name;
+
+
 
     public Survivor(String name) {
         this.name = name;
