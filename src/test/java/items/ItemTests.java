@@ -117,4 +117,5 @@ public class ItemTests {
         john.load(tool);
         assertThrows(Exception.class, () -> john.load(weapon));
     }
+
 }
